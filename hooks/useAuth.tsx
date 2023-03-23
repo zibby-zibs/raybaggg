@@ -26,6 +26,9 @@ interface AuthContextProps {
     userLoading: boolean
     btcValuesSum: number
     dollarsValuesSum: number
+    generateReferralLink: (userId: string) => void;
+    referralLink: string | null;
+    signupsCount: number | null;
 }
 
 type Props = {
@@ -41,6 +44,7 @@ export const AuthProvider = ({ children }: Props) => {
     const [error, setError] = useState({message: "", type: ""})
     const [recoveryToken, setRecoveryToken] = useState<string | null>(null);
     const [profile, setProfile] = useState<null | { [x: string]: any }>(null)
+   
     const router = useRouter();
 
 
@@ -81,6 +85,7 @@ export const AuthProvider = ({ children }: Props) => {
       const fetchUser = async() => {
         const { data: { user }} = await supabase.auth.getUser();
         setUser(user);
+        
       }
       fetchUser(); // returns the `user` if there's an active session avaialable
     
@@ -217,8 +222,6 @@ export const AuthProvider = ({ children }: Props) => {
     const btcValuesSum = profile?.deposit_in_btc?.reduce((total: number, amount:number) => total + amount);
 
 
-   
-    
 
     return (
         <AuthContext.Provider value={{
@@ -233,6 +236,7 @@ export const AuthProvider = ({ children }: Props) => {
         profile,
         btcValuesSum,
         dollarsValuesSum,
+       
             }}>
             {children}
         </AuthContext.Provider>

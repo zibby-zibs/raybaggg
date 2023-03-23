@@ -17,7 +17,7 @@ function Footer({}: Props) {
             const { id, text, push, icon } = data
             return (
               <Link href={push}>
-                <div key={id} className='flex flex-col items-center text-[#468fb4] text-sm md:text-xl font-extralight'>
+                <div key={id} className='flex flex-col items-center text-[#f35b04] text-sm md:text-xl font-extralight'>
                     {icon} {text}
                 </div>
               </Link>

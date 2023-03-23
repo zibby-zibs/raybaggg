@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <AuthProvider>
       <RecoilRoot>
         <main className='bg-[#182122]'>
-          <Layout>
+          
             <Component {...pageProps} />
-          </Layout>
+          
         </main>
       </RecoilRoot>
         

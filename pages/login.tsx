@@ -36,7 +36,7 @@ const signup = (props: Props) => {
   const router = useRouter();
 
   return (
-    <main className='flex flex-col justify-center items-center space-y-3 h-screen bg-[#d82a2a]'>
+    <main className='flex flex-col justify-center items-center space-y-3 h-screen'>
 
       <Image 
         src='/btc_wallpaper.jpg'

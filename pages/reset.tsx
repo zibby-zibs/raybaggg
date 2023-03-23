@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import  { useRouter } from 'next/router';
+import Image from 'next/image'
 import useAuth from '../hooks/useAuth';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import { IoIosCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io';
@@ -26,9 +27,16 @@ function reset({}: Props) {
     }
 
   return (
-    <main className='flex flex-col justify-center items-center space-y-3 h-screen bg-[#d82a2a]'>
+    <main className='flex flex-col justify-center items-center space-y-3 h-screen'>
 
-      
+        <Image 
+          src='/btc_wallpaper.jpg'
+          alt=""
+          width={0}
+          height={0}
+          sizes="100vw"
+          className='object-cover w-full h-full absolute top-0'
+        />
       { error?.type === 'success' ? (
            <aside className='z-20 px-3 py-1 flex bg-[#04de04] rounded-lg text-white'>
            <IoIosCheckmarkCircle className="w-6 h-6"/> {error?.message}
