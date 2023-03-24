@@ -40,7 +40,7 @@ const activeInvestment = (props: Props) => {
       <main className={`h-full mt-16 font-prompt ${screenWidth && 'flex gap-3 px-4'}`}>
           {
             !profile && !user ? (
-              <aside className='w-full h-screen flex flex-col items-center justify-center text-white text-xl space-y-3'>
+              <aside className='w-full h-screen flex flex-col p-2 items-center justify-center text-white text-xl space-y-3'>
                 <p>Please <span className='underline' onClick={()=>router.push('/login')}>login</span> or <span className='underline' onClick={()=>router.push('/signup')}>sign up</span> to see your investments</p>
                 <p>If you have signed in and can't see details, kindly refresh the page</p>
               </aside>

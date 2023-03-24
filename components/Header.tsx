@@ -18,7 +18,7 @@ function Header({}: Props) {
     const [showModal, setShowModal] = useState(false);
     const router = useRouter()
   return (
-    <header className='font-prompt bg-[#182122] w-full flex justify-between items-center text-white p-2'>
+    <header className='z-50 font-prompt w-full flex justify-between items-center text-white p-2 sticky top-0 bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-10 drop-shadow-xl'>
         <section className='font-righteous'>
           <h1 className='text-[#c1f888]'>Trustifield</h1>
           <h4 className='font-light'>Trading company</h4>

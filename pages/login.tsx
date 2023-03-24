@@ -41,6 +41,7 @@ const signup = (props: Props) => {
       <Image 
         src='/btc_wallpaper.jpg'
         alt=""
+        unoptimized
         width={0}
         height={0}
         sizes="100vw"

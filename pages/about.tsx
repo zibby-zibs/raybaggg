@@ -15,13 +15,13 @@ function about({}: Props) {
           <article className='font-prompt'>
             <h3 className='items-start px-3 uppercase underline'><span className='text-[#ccf888] tracking-[3px]'>Trustfield</span> investment policies</h3>
             <ul className='p-3 space-y-3'>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>On every investment there will be a weekly 30% increment.</li>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>Investors can only initiate withdrawal after 90 days except for VIPs.</li>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>Referrals get a 10% profit of their investors.</li>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>There is an extra 10% bonus on referring 4 VIPs.</li>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>After 90 days of investing you get a weekly 30% of your available balance.</li>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>A long term investment worth $5,000,000 gets you on the company's shares.</li>
-              <li className='flex items-center gap-4'><MdOutlineDoubleArrow className='text-[#ccf888] text-xl'/>Contact with the admin concerning issues, withdrawal and funding will happen over mail.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span> On every investment there will be a weekly 30% increment.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span>Investors can only initiate withdrawal after 90 days except for VIPs.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span>Referrals get a 10% profit of their investors.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span>There is an extra 10% b  VIPs.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span>After 90 days of investing you get a weekly 30% of your available balance.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span>A long term investment worth $5,000,000 gets you on the company's shares.</li>
+              <li className='flex gap-2 items-center'><span><MdOutlineDoubleArrow className='text-[#ccf888] md:text-2xl'/></span>Contact with the admin concerning issues, withdrawal and funding will happen over mail.</li>
             </ul>
           </article>
           <div className='w-full'>
