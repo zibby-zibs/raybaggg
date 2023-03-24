@@ -9,7 +9,7 @@ function about({}: Props) {
   return (
     <>
       <Header />
-      <main className=' h-screen flex flex-col items-center md:items-start space-y-3 text-white font-prompt'>
+      <main className=' h-screen flex flex-col items-center md:items-start space-y-3 text-white font-prompt mb-11'>
           <h1 className='pt-5 text-xl md:text-3xl mx-auto uppercase font-semibold'>About <span className='text-[#ccf888] tracking-[3px]'>Trustfield</span> </h1>
 
           <article className='font-prompt'>
@@ -28,7 +28,7 @@ function about({}: Props) {
             <h1 className='text-center uppercase md:text-3xl pt-5'>contact us</h1>
             <p className='text-center'>Please reach out to the admin using the form below. You will receive a reply.</p>
           </div> 
-          <form action="" className='lg:max-w-md flex flex-col mx-auto space-y-3'>
+          <form action="" className='lg:max-w-md flex flex-col mx-auto space-y-3 pb-8'>
             <label className='inline-block w-full'>
               <input 
                 type="text" 
@@ -51,6 +51,9 @@ function about({}: Props) {
                 className='inputForm'
               />
             </label>
+            
+              <button className='bg-[#f35b04] p-3'>Submit</button>
+            
           </form>
       </main>
       <Footer />

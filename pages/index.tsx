@@ -47,13 +47,14 @@ const Home: NextPage = () => {
             >
               start now <BsArrowRightCircle className='text-3xl'/>
             </span>
-            <span 
-              onClick={()=>router.push('/login')} 
-              className='bg-[#f35b04] flex items-center gap-2 w-fit p-3 uppercase ml-3 text-white'
-            >
-              login <BsArrowRightCircle className='text-3xl'/>
-            </span>
-
+            {!user || !profile && 
+              <span 
+                onClick={()=>router.push('/login')} 
+                className='bg-[#f35b04] flex items-center gap-2 w-fit p-3 uppercase ml-3 text-white'
+              >
+                login <BsArrowRightCircle className='text-3xl'/>
+              </span>
+            }
           </div>
         </div>
 
